@@ -137,25 +137,65 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3127716181634440442}
     m_Modifications:
+    - target: {fileID: 278319982847313300, guid: b38ca5a0621efbd4eadda65912eb6927,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 766810369304467537, guid: b38ca5a0621efbd4eadda65912eb6927,
         type: 3}
       propertyPath: m_fontSize
-      value: 15.05
+      value: 20.6
       objectReference: {fileID: 0}
     - target: {fileID: 950149456550334448, guid: b38ca5a0621efbd4eadda65912eb6927,
         type: 3}
       propertyPath: m_Name
       value: CartaDePerguntas
       objectReference: {fileID: 0}
+    - target: {fileID: 1122998163821419676, guid: b38ca5a0621efbd4eadda65912eb6927,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.95412856
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122998163821419676, guid: b38ca5a0621efbd4eadda65912eb6927,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.52762765
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122998163821419676, guid: b38ca5a0621efbd4eadda65912eb6927,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.30962762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122998163821419676, guid: b38ca5a0621efbd4eadda65912eb6927,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122998163821419676, guid: b38ca5a0621efbd4eadda65912eb6927,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122998163821419676, guid: b38ca5a0621efbd4eadda65912eb6927,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122998163821419676, guid: b38ca5a0621efbd4eadda65912eb6927,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.30000305
+      objectReference: {fileID: 0}
     - target: {fileID: 1676129295827825789, guid: b38ca5a0621efbd4eadda65912eb6927,
         type: 3}
       propertyPath: m_fontSize
-      value: 25.4
+      value: 32.45
       objectReference: {fileID: 0}
     - target: {fileID: 2439873380845568269, guid: b38ca5a0621efbd4eadda65912eb6927,
         type: 3}
       propertyPath: m_fontSize
-      value: 24.2
+      value: 31.5
       objectReference: {fileID: 0}
     - target: {fileID: 3112698113785394113, guid: b38ca5a0621efbd4eadda65912eb6927,
         type: 3}
