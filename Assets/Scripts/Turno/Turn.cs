@@ -61,6 +61,7 @@ public class Turn : MonoBehaviour
         {
             players[x] = _possiblePlayers[x];
             players[x].SetPlayerDetails(playersDetails[x]);
+            players[x].Activate();
         }
 
         _playerMovement.SetInnitialPosition(players);
