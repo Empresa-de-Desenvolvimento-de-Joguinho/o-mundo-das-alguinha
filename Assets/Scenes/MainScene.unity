@@ -614,12 +614,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5359990493254124101, guid: 183fc7033c75a0a4e92a87e240354aa5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5394865332331675650, guid: 183fc7033c75a0a4e92a87e240354aa5,
         type: 3}
       propertyPath: m_Name
       value: StartTurn
       objectReference: {fileID: 0}
     - target: {fileID: 5394865332331675650, guid: 183fc7033c75a0a4e92a87e240354aa5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8168252248290068971, guid: 183fc7033c75a0a4e92a87e240354aa5,
         type: 3}
       propertyPath: m_IsActive
       value: 0
