@@ -1,23 +1,30 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Turno;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Jogador
 {
 	public class CharacterSelector : PlayerSelection
 	{
-		[SerializeField] private GameObject confirmedPlayers;
+		[SerializeField] private GameObject canvas;
 		[SerializeField] private SingleCharacterSelector[] singleCharacterSelector;
+		[SerializeField] private GameObject confirmButton;
+		private bool canConfirm => singleCharacterSelector.Where(x => x.IsSelected()).Count() >= 2;
 
-		public override void ShowElements()
+		private void Update()
+        {
+			confirmButton.SetActive(canConfirm);
+		}
+
+        public override void ShowElements()
 		{
-			confirmedPlayers.SetActive(true);
+			canvas.SetActive(true);
 		}
 
 		protected override void HideComponent()
 		{
-			confirmedPlayers.SetActive(false);
+			canvas.SetActive(false);
 		}
 
 		public override IPlayerDetails[] GetPlayers()
