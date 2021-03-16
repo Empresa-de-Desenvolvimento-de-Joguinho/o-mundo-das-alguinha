@@ -1356,7 +1356,7 @@ MonoBehaviour:
   _playerSelection: {fileID: 7334962349399275561}
   _startTurn: {fileID: 603588402}
   _diceRoll: {fileID: 0}
-  _playerMovement: {fileID: 0}
+  _playerMovement: {fileID: 1687677591}
   _eventCardExecuter: {fileID: 0}
   _questionCardExecuter: {fileID: 0}
   _finishedTurn: {fileID: 66545572}
