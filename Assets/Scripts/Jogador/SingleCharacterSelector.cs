@@ -6,35 +6,19 @@ namespace Jogador
 	public class SingleCharacterSelector : MonoBehaviour
 	{
 		[SerializeField] private Character[] characters;
-
 		[SerializeField] private Text characterDisplayedName;
-
 		[SerializeField] private Image characterSpriteImage;
-
 		[SerializeField] private GameObject readyText;
-
 		[SerializeField] private GameObject confirmText;
-
 		[SerializeField] private GameObject cancelText;
-
 		[SerializeField] private GameObject addText;
-
 		[SerializeField] private GameObject removeText;
-
 		[SerializeField] private GameObject[] interactionButtons;
-
 		[SerializeField] private GameObject playerSelectionScreen;
 
-		private bool _selected;
-
+		public bool _selected;
 		private bool _active;
-
 		private int _currentCharacterIndex;
-
-        private void Start()
-        {
-			ShowCharacter();
-		}
 
         public Player GetPlayerCharacter()
 		{
@@ -96,6 +80,7 @@ namespace Jogador
 			playerSelectionScreen.SetActive(_active);
 			addText.SetActive(_active);
 			removeText.SetActive(!_active);
+			ShowCharacter();
 		}
 
 		public bool IsSelected()
