@@ -11,11 +11,32 @@ namespace Jogador
 
 		[SerializeField] private Image characterSpriteImage;
 
+		[SerializeField] private GameObject readyText;
+
+		[SerializeField] private GameObject confirmText;
+
+		[SerializeField] private GameObject cancelText;
+
+		[SerializeField] private GameObject addText;
+
+		[SerializeField] private GameObject removeText;
+
+		[SerializeField] private GameObject[] interactionButtons;
+
+		[SerializeField] private GameObject playerSelectionScreen;
+
 		private bool _selected;
+
+		private bool _active;
 
 		private int _currentCharacterIndex;
 
-		public Player GetPlayerCharacter()
+        private void Start()
+        {
+			ShowCharacter();
+		}
+
+        public Player GetPlayerCharacter()
 		{
 			var selectedCharacter = characters[_currentCharacterIndex];
 			if (_selected)
@@ -63,20 +84,36 @@ namespace Jogador
 			characterDisplayedName.text = currentCharacter.GetName();
 			characterSpriteImage.sprite = currentCharacter.GetSprite();
 		}
-
-		public void ConfirmSelection()
+		
+		public void ToggleConfirmation()
 		{
-			_selected = true;
+			ConfirmSelection(!_selected);
 		}
 
-		public void CancelSelection()
+		public void ToggleCharacterSelection()
 		{
-			_selected = false;
+			_active = !_active;
+			playerSelectionScreen.SetActive(_active);
+			addText.SetActive(_active);
+			removeText.SetActive(!_active);
 		}
 
 		public bool IsSelected()
 		{
 			return _selected;
+		}
+
+		private void ConfirmSelection(bool isSelected)
+		{
+			_selected = isSelected;
+			confirmText.SetActive(!isSelected);
+			cancelText.SetActive(isSelected);
+			readyText.SetActive(isSelected);
+
+			foreach(var button in interactionButtons)
+            {
+				button.SetActive(!isSelected);
+            }
 		}
 	}
 }
