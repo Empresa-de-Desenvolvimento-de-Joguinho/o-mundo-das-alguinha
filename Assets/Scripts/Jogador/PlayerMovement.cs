@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private GameObject body;
+    [SerializeField] private SpriteRenderer playerSprite;
+
     public int ActualCellNumber => actualCell.CellNumber;
     private CellBehaviour actualCell;
     private IPlayerDetails playerDetail;
@@ -31,5 +34,11 @@ public class PlayerMovement : MonoBehaviour
     public IPlayerDetails GetDetails()
     {
         return playerDetail;
+    }
+
+    public void Activate()
+    {
+        body.SetActive(true);
+        playerSprite.sprite = playerDetail.GetCharacter().GetSprite();
     }
 }
