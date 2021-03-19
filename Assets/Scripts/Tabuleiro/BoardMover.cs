@@ -52,5 +52,8 @@ public class BoardMover : IPlayerBoardMovement
 
         var nextPosition = board.GetNexPosition(actualPosition.Cell, amountOfCellsToMove);
         nextPosition.AddPlayerPosition(playerMovement);
+
+        // TODO: Alterar para apenas finalizar quando terminar a animação de andar
+        FinishComponent();
     }
 }

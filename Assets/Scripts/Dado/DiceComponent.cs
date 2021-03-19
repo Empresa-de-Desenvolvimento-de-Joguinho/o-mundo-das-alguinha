@@ -5,7 +5,7 @@ using Random = System.Random;
 
 namespace Turno
 {
-	public class DiceComponent : MoveComponent
+	public abstract class DiceComponent : TurnComponent
 	{
 		[SerializeField] [Range(1, 6)] private int diceSide;
 		private bool canRollDice = true;
