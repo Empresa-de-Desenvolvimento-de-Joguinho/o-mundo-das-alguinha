@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Bent\xF4nica_10"
   m_EditorClassIdentifier: 
-  fact: 
-  isTrue: 0
+  Fact: 
+  IsTrue: 0

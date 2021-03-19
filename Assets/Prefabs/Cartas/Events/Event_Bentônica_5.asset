@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 416a0dce8cba653439def728eec753ee, type: 3}
+  m_Name: "Event_Bent\xF4nica_5"
+  m_EditorClassIdentifier: 
+  description: "Diatom\xE1cea, no fundo voc\xEA pode virar um f\xF3ssil"
+  actionDescription: ande 2 casas.
+  quantityToWalk: 2
+  cellNumber: 31
+  characters:
+  - {fileID: 11400000, guid: ef8624d0d4d15464ba859e9a296ac0fa, type: 2}
