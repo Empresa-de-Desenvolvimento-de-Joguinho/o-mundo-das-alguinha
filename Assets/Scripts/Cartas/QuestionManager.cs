@@ -18,12 +18,12 @@ namespace Cartas
 		private Question _currentQuestion;
 		private int _quantityToMove;
 
-        private void Start()
-        {
+		private void Start()
+		{
 			_unansweredQuestions = new List<Question>(questions);
-        }
+		}
 
-        void SetCurrentQuestion()
+		void SetCurrentQuestion()
 		{
 			int randomQuestionIndex = new Random().NextInt(0, _unansweredQuestions.Count);
 			_currentQuestion = _unansweredQuestions[randomQuestionIndex];
