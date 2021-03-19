@@ -7,54 +7,46 @@ namespace Turno
 {
 	public abstract class DiceComponent : TurnComponent
 	{
+		[SerializeField] private GameObject _dado;
 		[SerializeField] [Range(1, 6)] private int diceSide;
 		private bool canRollDice = true;
 		private Animator animator;
 		private Random rnd = new Random();
 
-		public override int GetQuantityToMove()
+		public int GetQuantityToMove()
 		{
 			Start();
+			RollDice();
 			return diceSide;
 		}
-		public void RollDice()
+		public virtual void RollDice()
 		{
-			if (canRollDice)
+			if (!canRollDice)
 			{
-				diceSide = rnd.Next();
-				showDiceSide(diceSide);
-				canRollDice = false;
+				throw new System.Exception("It's not possible to roll the dice now.");
 			}
-			throw new System.Exception("It's not possible to roll the dice now.");
+			diceSide = rnd.Next();
+			showDiceSide(diceSide);
+			canRollDice = false;
 		}
 
 		public override void ShowElements()
 		{
-			throw new System.NotImplementedException();
+			_dado.SetActive(true);
 		}
 
 		protected override void HideComponent()
 		{
-			throw new System.NotImplementedException();
+			_dado.SetActive(false);
 		}
 		void showDiceSide(int diceSide)
 		{
-			if (diceSide.Equals(1))
-				animator.Play("dado_rolando_01");
-			if (diceSide.Equals(2))
-				animator.Play("dado_rolando_02");
-			if (diceSide.Equals(3))
-				animator.Play("dado_rolando_03");
-			if (diceSide.Equals(4))
-				animator.Play("dado_rolando_04");
-			if (diceSide.Equals(5))
-				animator.Play("dado_rolando_05");
-			if (diceSide.Equals(6))
-				animator.Play("dado_rolando_06");
+			animator.Play($"dado_rolando_0{diceSide}");
 		}
 
 		private void Start()
 		{
+			ShowElements();
 			animator = gameObject.GetComponent<Animator>();
 			canRollDice = true;
 		}
