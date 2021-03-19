@@ -9,7 +9,7 @@ public class Turn : MonoBehaviour
     [SerializeField] private StartComponent _startTurn;
     [SerializeField] private DiceComponent _diceRoll;
     [SerializeField] private IPlayerBoardMovement _playerMovement;
-    [SerializeField] private IEventComponent _eventCardExecuter;
+    [SerializeField] private EventManager _eventCardExecuter;
     [SerializeField] private MoveComponent _questionCardExecuter;
     [SerializeField] private EndTurn _finishedTurn;
     [SerializeField] private GameOver _gameOverScreen;
@@ -99,9 +99,8 @@ public class Turn : MonoBehaviour
 
         if (isAEventCell)
         {
-            _eventCardExecuter.SetPlayer(currentPlayer.GetDetails());
+            _eventCardExecuter.SetPlayer(currentPlayer);
             return TurnStates.EVENT;
-
         }
 
         var isAQuestionCell = landedCell == CellType.QUESTION;

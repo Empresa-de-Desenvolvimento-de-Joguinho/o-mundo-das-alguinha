@@ -10,7 +10,7 @@ namespace Turno
         [SerializeField] [Range(1, 6)] private int diceSide;
         private Random rnd = new Random();
 
-        public int RollDice()
+        public virtual int RollDice()
         {
             diceSide = rnd.Next();
             return diceSide;
