@@ -7,11 +7,10 @@ public class EndTurn : TurnComponent
 {
     public override void ShowElements()
     {
-        throw new System.NotImplementedException();
+        FinishComponent();
     }
 
     protected override void HideComponent()
     {
-        throw new System.NotImplementedException();
     }
 }

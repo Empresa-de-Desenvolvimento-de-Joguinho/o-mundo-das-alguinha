@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public CellBehaviour ActualCell
     {
         get { return actualCell; }
-        set { actualCell = value; Debug.Log(actualCell.name); }
+        set { actualCell = value; }
     }
 
     public void SetInnitialPosition(CellBehaviour cellBehaviour)
