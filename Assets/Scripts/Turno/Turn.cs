@@ -77,7 +77,7 @@ public class Turn : MonoBehaviour
 
     private TurnStates GetPlayerDiceRoll()
     {
-        var quantityToWalk = _diceRoll.RollDice();
+        var quantityToWalk = _diceRoll.GetQuantityToMove();
 
         _playerMovement.SetPlayerMovement(currentPlayer, quantityToWalk);
 
