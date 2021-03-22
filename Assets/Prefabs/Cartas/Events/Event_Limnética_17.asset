@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 416a0dce8cba653439def728eec753ee, type: 3}
+  m_Name: "Event_Limn\xE9tica_17"
+  m_EditorClassIdentifier: 
+  description: Cuidado, aqui os peixes podem te comer.
+  actionDescription: Volte 2 casas
+  quantityToWalk: -2
+  cellNumber: 17
+  characters:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
