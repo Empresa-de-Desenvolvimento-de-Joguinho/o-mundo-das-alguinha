@@ -842,6 +842,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 434706fce8e62cc44a08cf5444c8dd08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &916291891 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3302094273916043839, guid: 3e7054b06dab65846b2aae77fc14a605,
+    type: 3}
+  m_PrefabInstance: {fileID: 1022072596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bffdaae060bbfd47a24f9b55244892c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1010868980 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4773705420642895770, guid: a52faeb4f181ce04bbcff9d05502c33d,
@@ -869,7 +881,7 @@ PrefabInstance:
     - target: {fileID: 3116881492844283014, guid: 3e7054b06dab65846b2aae77fc14a605,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3565465461899968472, guid: 3e7054b06dab65846b2aae77fc14a605,
         type: 3}
@@ -955,6 +967,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756292179161884965, guid: 3e7054b06dab65846b2aae77fc14a605,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e7054b06dab65846b2aae77fc14a605, type: 3}
@@ -1478,7 +1495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerSelection: {fileID: 1503264891}
   _startTurn: {fileID: 603588402}
-  _diceRoll: {fileID: 0}
+  _diceRoll: {fileID: 916291891}
   _playerMovement: {fileID: 1010868980}
   _eventCardExecuter: {fileID: 1347571096}
   _questionCardExecuter: {fileID: 626997504}

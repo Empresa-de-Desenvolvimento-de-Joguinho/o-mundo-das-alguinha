@@ -1,54 +1,65 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 using Random = System.Random;
 
 namespace Turno
 {
-	public abstract class DiceComponent : TurnComponent
-	{
-		[SerializeField] private GameObject _dado;
-		[SerializeField] [Range(1, 6)] private int diceSide;
-		private bool canRollDice = true;
-		private Animator animator;
-		private Random rnd = new Random();
+    public class DiceComponent : TurnComponent
+    {
+        [SerializeField] private GameObject _dadoButton;
+        [SerializeField] private GameObject _dadoRoll;
+        [SerializeField] private GameObject _canvas;
+        [SerializeField] private Image diceImage;
+        [SerializeField] private Sprite[] _diceImages;
 
-		public int GetQuantityToMove()
-		{
-			Start();
-			RollDice();
-			return diceSide;
-		}
-		public virtual void RollDice()
-		{
-			if (!canRollDice)
-			{
-				throw new System.Exception("It's not possible to roll the dice now.");
-			}
-			diceSide = rnd.Next();
-			showDiceSide(diceSide);
-			canRollDice = false;
-		}
+        public int diceSide;
+        private bool canRollDice = true;
+        private Random rnd = new Random();
 
-		public override void ShowElements()
-		{
-			_dado.SetActive(true);
-		}
+        public int GetQuantityToMove()
+        {
+            return diceSide;
+        }
 
-		protected override void HideComponent()
-		{
-			_dado.SetActive(false);
-		}
-		void showDiceSide(int diceSide)
-		{
-			animator.Play($"dado_rolando_0{diceSide}");
-		}
+        public virtual void RollDice()
+        {
+            if (!canRollDice)
+            {
+                FinishComponent();
+            }
 
-		private void Start()
-		{
-			ShowElements();
-			animator = gameObject.GetComponent<Animator>();
-			canRollDice = true;
-		}
-	}
+            diceSide = rnd.Next(1,6);
+
+            diceImage.sprite = _diceImages[diceSide];
+            canRollDice = false;
+        }
+
+        public void ShowDiceButton()
+        {
+            _dadoButton.SetActive(false);
+            _dadoRoll.SetActive(true);
+            RollDice();
+        }
+
+        public override void ShowElements()
+        {
+            _canvas.SetActive(true);
+            _dadoButton.SetActive(true);
+            _dadoRoll.SetActive(false);
+        }
+
+        protected override void HideComponent()
+        {
+            canRollDice = true;
+
+            _canvas.SetActive(false);
+            _dadoButton.SetActive(false);
+            _dadoRoll.SetActive(false);
+        }
+
+        private void Start()
+        {
+            canRollDice = true;
+        }
+    }
 }
