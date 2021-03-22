@@ -14,6 +14,7 @@ public class Turn : MonoBehaviour
     [SerializeField] private EndTurn _finishedTurn;
     [SerializeField] private GameOver _gameOverScreen;
     [SerializeField] private PlayerMovement[] _possiblePlayers;
+    [SerializeField] private PlayersDisplayer _playersDisplayer;
 
     private PlayerMovement[] players;
     private Dictionary<TurnStates, (TurnComponent, Func<TurnStates>)> _actionMap;
@@ -65,6 +66,7 @@ public class Turn : MonoBehaviour
         }
 
         _playerMovement.SetInnitialPosition(players);
+        _playersDisplayer.SetPlayerStats(players);
 
         currentPlayerIndex = 0;
         _startTurn.SetPlayer(currentPlayer.GetDetails());

@@ -57,7 +57,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a845d213cd9d32d4b8ee4aa6569cec41, type: 3}
   fixedPosition: 0
   diceFixedPosition: 0
-  diceSide: 0
 --- !u!1 &3254028515156184736
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,7 +452,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_TargetDisplay: 0
 --- !u!114 &4021466844161848935
 MonoBehaviour:
