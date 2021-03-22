@@ -49,7 +49,6 @@ MonoBehaviour:
   canvas: {fileID: 4263157517273436698}
   deck: {fileID: 4860321860309823352}
   cardScreen: {fileID: 7706347749105846691}
-  _unansweredQuestions: []
 --- !u!1 &4263157517273436698
 GameObject:
   m_ObjectHideFlags: 0
