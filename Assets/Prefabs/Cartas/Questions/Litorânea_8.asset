@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Litor\xE2nea_8"
   m_EditorClassIdentifier: 
-  Fact: 
-  IsTrue: 0
+  Fact: "O famoso \u201Climo\u201D ou \u201Cgosma verde\u201D que encontramos em
+    cima das pedras nos rios na realidade s\xE3o microalgas grudadas"
+  IsTrue: 1

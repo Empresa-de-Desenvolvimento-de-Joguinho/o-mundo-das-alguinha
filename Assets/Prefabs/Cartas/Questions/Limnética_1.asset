@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Limn\xE9tica_1"
   m_EditorClassIdentifier: 
-  fact: "Como as plantas, as microalgas s\xE3o autotr\xF3ficas, ou seja, produzem
-    seu pr\xF3prio alimento atrav\xE9s da fotoss\xEDntese."
-  isTrue: 1
+  Fact: "Como as plantas, as microalgas s\xE3o autotr\xF3ficas, ou seja, produzem
+    seu pr\xF3prio alimento atrav\xE9s da fotoss\xEDntese"
+  IsTrue: 1

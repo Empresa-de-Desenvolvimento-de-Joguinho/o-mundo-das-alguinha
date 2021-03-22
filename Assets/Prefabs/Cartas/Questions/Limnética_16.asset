@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Limn\xE9tica_16"
   m_EditorClassIdentifier: 
-  Fact: 
-  IsTrue: 0
+  Fact: "Algumas cianobact\xE9rias e algas verdes produzem uma camada gelatinosa
+    (chamada de \u201Cmucilagem\u201D), que ajudam na flutua\xE7\xE3o"
+  IsTrue: 1

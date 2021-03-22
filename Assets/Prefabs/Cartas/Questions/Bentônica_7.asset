@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Bent\xF4nica_7"
   m_EditorClassIdentifier: 
-  Fact: 
-  IsTrue: 0
+  Fact: "A carapa\xE7a de s\xEDlica das diatom\xE1ceas \xE9 t\xE3o resistente que
+    pode permanecer na regi\xE3o bent\xF4nica e tornar um f\xF3ssil depois de muitos
+    anos"
+  IsTrue: 1

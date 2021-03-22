@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Polu\xEDda_9"
   m_EditorClassIdentifier: 
-  Fact: 
-  IsTrue: 0
+  Fact: "Os organismos que mais gostam de ambientes polu\xEDdos s\xE3o as cianobact\xE9rias,
+    elas se multiplicam muito nestes ambientes formando uma camada verde na \xE1gua"
+  IsTrue: 1

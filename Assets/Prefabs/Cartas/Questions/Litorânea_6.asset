@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Litor\xE2nea_6"
   m_EditorClassIdentifier: 
-  Fact: 
+  Fact: "Euglenas e dinoflagelados n\xE3o apresentam flagelos para locomo\xE7\xE3o"
   IsTrue: 0

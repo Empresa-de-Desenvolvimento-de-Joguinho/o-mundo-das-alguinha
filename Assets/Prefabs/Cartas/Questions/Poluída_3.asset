@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Polu\xEDda_3"
   m_EditorClassIdentifier: 
-  Fact: 
-  IsTrue: 0
+  Fact: "Em m\xE9dia cada pessoa usa 135 litros de \xE1gua para tomar um banho de
+    15 minutos"
+  IsTrue: 1

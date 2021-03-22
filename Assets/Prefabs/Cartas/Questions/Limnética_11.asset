@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Limn\xE9tica_11"
   m_EditorClassIdentifier: 
-  Fact: 
-  IsTrue: 0
+  Fact: "Grande parte da fotoss\xEDntese realizada na regi\xE3o limn\xE9tica \xE9
+    feita por algas e n\xE3o por plantas"
+  IsTrue: 1

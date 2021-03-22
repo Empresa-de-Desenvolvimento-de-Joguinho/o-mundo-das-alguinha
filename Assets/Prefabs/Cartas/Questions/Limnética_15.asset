@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Limn\xE9tica_15"
   m_EditorClassIdentifier: 
-  Fact: 
-  IsTrue: 0
+  Fact: "A carapa\xE7a de s\xEDlica das diatom\xE1ceas deixam elas muito pesadas
+    para se manterem na regi\xE3o limn\xE9tica"
+  IsTrue: 1

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Limn\xE9tica_8"
   m_EditorClassIdentifier: 
-  Fact: 
+  Fact: "A regi\xE3o limn\xE9tica dos lagos \xE9 a mais pr\xF3xima do ambiente terrestre"
   IsTrue: 0

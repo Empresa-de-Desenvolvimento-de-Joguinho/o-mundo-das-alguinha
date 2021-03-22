@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Litor\xE2nea_4"
   m_EditorClassIdentifier: 
-  Fact: 
-  IsTrue: 0
+  Fact: "\xC9 na zona litor\xE2nea que encontramos maior quantidade de plantas aqu\xE1ticas"
+  IsTrue: 1

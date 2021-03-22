@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Bent\xF4nica_2"
   m_EditorClassIdentifier: 
-  Fact: 
+  Fact: "A regi\xE3o bent\xF4nica \xE9 a regi\xE3o mais funda do lago, por isso n\xE3o
+    existem seres vivos nesta regi\xE3o"
   IsTrue: 0

@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Limn\xE9tica_14"
   m_EditorClassIdentifier: 
-  Fact: 
-  IsTrue: 0
+  Fact: "Algumas cianobact\xE9rias apresentam estruturas cheias de ar (chamadas \u201Caer\xF3topos\u201D)
+    que ajudam elas flutuarem na \xE1gua"
+  IsTrue: 1

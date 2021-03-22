@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Litor\xE2nea_7"
   m_EditorClassIdentifier: 
-  Fact: 
-  IsTrue: 0
+  Fact: "Muitas diatom\xE1ceas podem ficar grudadas nas plantas aqu\xE1ticas ou qualquer
+    material que estiver dentro da \xE1gua"
+  IsTrue: 1

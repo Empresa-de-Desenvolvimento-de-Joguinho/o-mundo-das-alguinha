@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Litor\xE2nea_14"
   m_EditorClassIdentifier: 
-  Fact: 
+  Fact: "O \u201Climo\u201D encontrado em rochas, galhos e plantas aqu\xE1ticas s\xF3
+    servem para as pessoas escorregarem"
   IsTrue: 0

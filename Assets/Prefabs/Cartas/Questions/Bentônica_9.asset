@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Bent\xF4nica_9"
   m_EditorClassIdentifier: 
-  Fact: 
-  IsTrue: 0
+  Fact: "Na regi\xE3o bent\xF4nica \xE9 onde mais ocorre o processo de decomposi\xE7\xE3o,
+    e os organismos que vivem nessa regi\xE3o auxiliam nesse processo. "
+  IsTrue: 1

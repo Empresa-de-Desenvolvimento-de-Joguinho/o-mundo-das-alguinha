@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Litor\xE2nea_1"
   m_EditorClassIdentifier: 
-  Fact: 
-  IsTrue: 0
+  Fact: "A zona litor\xE2nea do lago \xE9 aquela mais pr\xF3xima da margem do lago
+    com o ambiente terrestre"
+  IsTrue: 1

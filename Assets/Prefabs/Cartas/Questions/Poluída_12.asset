@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Polu\xEDda_12"
   m_EditorClassIdentifier: 
-  Fact: 
-  IsTrue: 0
+  Fact: "A presen\xE7a de muitas cianobact\xE9rias e a aus\xEAncia de outras microalgas
+    pode indicar que o ambiente est\xE1 polu\xEDdo"
+  IsTrue: 1

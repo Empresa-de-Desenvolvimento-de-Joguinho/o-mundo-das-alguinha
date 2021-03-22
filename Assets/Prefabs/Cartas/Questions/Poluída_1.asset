@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
   m_Name: "Polu\xEDda_1"
   m_EditorClassIdentifier: 
-  Fact: 
-  IsTrue: 0
+  Fact: "Lixo e esgoto s\xE3o os principais poluentes dos ambientes aqu\xE1ticos"
+  IsTrue: 1
