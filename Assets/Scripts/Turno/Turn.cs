@@ -142,6 +142,7 @@ public class Turn : MonoBehaviour
 
         if (playerWon)
         {
+            _gameOverScreen.SetPlayerData(players);
             return TurnStates.PLAYER_WIN;
         }
 

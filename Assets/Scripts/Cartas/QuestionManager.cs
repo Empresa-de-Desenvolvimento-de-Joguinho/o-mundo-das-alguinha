@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using Turno;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = System.Random;
 
 namespace Cartas
@@ -13,7 +14,12 @@ namespace Cartas
 		[SerializeField] private GameObject canvas;
 		[SerializeField] private GameObject deck;
 		[SerializeField] private GameObject cardScreen;
-		
+
+		[SerializeField] private GameObject answers;
+		[SerializeField] private GameObject confirmButton;
+		[SerializeField] private GameObject rightButtons;
+		[SerializeField] private GameObject wrongButtons;
+
 		private List<Question> _unansweredQuestions;
 		private Question _currentQuestion;
 		private int _quantityToMove;
@@ -35,18 +41,23 @@ namespace Cartas
 
 		public void ValidateQuestion(bool answer)
 		{
+			answers.SetActive(false);
+
+			rightButtons.SetActive(_currentQuestion.IsTrue);
+			wrongButtons.SetActive(!_currentQuestion.IsTrue);
+
 			if (_currentQuestion.IsTrue == answer)
 			{
-				Debug.Log(("CERTO"));
-				_unansweredQuestions.Remove(_currentQuestion);
+				//_unansweredQuestions.Remove(_currentQuestion);
 				_quantityToMove = 1;
 			}
 			else
 			{
-				Debug.Log(("ERRADO"));
-				_unansweredQuestions.Remove(_currentQuestion);
+				//_unansweredQuestions.Remove(_currentQuestion);
 				_quantityToMove = -1;
 			}
+
+			confirmButton.SetActive(true);
 		}
 
 		public void ShowCardScreen()
@@ -65,12 +76,17 @@ namespace Cartas
 			SetCurrentQuestion();
 			canvas.SetActive(true);
 			deck.SetActive(true);
+			answers.SetActive(true);
 		}
 
 		protected override void HideComponent()
 		{
 			canvas.SetActive(false);
 			cardScreen.SetActive(false);
+			answers.SetActive(false);
+			wrongButtons.SetActive(false);
+			rightButtons.SetActive(false);
+			confirmButton.SetActive(false);
 		}
 
 		public override int GetQuantityToMove()

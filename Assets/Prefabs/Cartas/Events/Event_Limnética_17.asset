@@ -17,8 +17,8 @@ MonoBehaviour:
   quantityToWalk: -2
   cellNumber: 17
   characters:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: fb13768ca3d9a1b40a79e1b903aed7b1, type: 2}
+  - {fileID: 11400000, guid: 639d165f4c999db408d1772617b14497, type: 2}
+  - {fileID: 11400000, guid: ef8624d0d4d15464ba859e9a296ac0fa, type: 2}
+  - {fileID: 11400000, guid: 386a12edb6ded0045b289b1395d82efe, type: 2}
+  - {fileID: 11400000, guid: d84f0448b69a75840a364076d08cd461, type: 2}
