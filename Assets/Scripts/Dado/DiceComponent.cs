@@ -18,7 +18,7 @@ namespace Turno
 
         public int GetQuantityToMove()
         {
-            return diceSide;
+            return diceSide + 1;
         }
 
         public virtual void RollDice()
