@@ -28,12 +28,16 @@ public class EventManager : MoveComponent
 	public void ShowCardScreen()
 	{
 		_eventDescription.text = currentEvent?.description;
-		_eventAction.text = currentEvent?.description;
+		_eventAction.text = currentEvent?.actionDescription;
 
 		if (currentEvent && currentEvent.IsEventForCharacter(currentCharacter))
 		{
 			quantityToMove = currentEvent.quantityToWalk;
-		}
+        }
+        else
+        {
+			quantityToMove = 0;
+        }
 
 		_deck.SetActive(false);
 		_cardScreen.SetActive(true);

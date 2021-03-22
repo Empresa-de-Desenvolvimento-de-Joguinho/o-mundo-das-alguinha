@@ -12,12 +12,20 @@ namespace Turno
         [SerializeField] private Image diceImage;
         [SerializeField] private Sprite[] _diceImages;
 
-        public int diceSide;
+        [SerializeField] private bool fixedPosition;
+        [SerializeField] private int diceFixedPosition;
+
+        private int diceSide;
         private bool canRollDice = true;
         private Random rnd = new Random();
 
         public int GetQuantityToMove()
         {
+            if (fixedPosition)
+            {
+                return diceFixedPosition;
+            }
+
             return diceSide + 1;
         }
 

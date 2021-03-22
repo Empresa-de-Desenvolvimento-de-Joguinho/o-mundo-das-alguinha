@@ -273,7 +273,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 296a243ee2c3d1f4eb0d3729896ac56e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _events: []
+  _events:
+  - {fileID: 11400000, guid: 105b74752c3bde143a92044b635a2ae8, type: 2}
+  - {fileID: 11400000, guid: 30c32a3a5c9e9df4190792f3cc19dc21, type: 2}
+  - {fileID: 11400000, guid: 03a80c41965662640a46e2d77af13666, type: 2}
+  - {fileID: 11400000, guid: c0cb9244d6966734dabd307a25257908, type: 2}
+  - {fileID: 11400000, guid: d49bf8d8df42ae547aabcb877aff660d, type: 2}
+  - {fileID: 11400000, guid: 572a1ddad8591d64482543d14212b8fd, type: 2}
+  - {fileID: 11400000, guid: bfbcfb5a3b090314c90f433e238092c7, type: 2}
+  - {fileID: 11400000, guid: 2cbe9df52d5105e44bf148b837012947, type: 2}
   _eventDescription: {fileID: 6468522514008763425}
   _eventAction: {fileID: 5136369038120834290}
   _canvas: {fileID: 1360831177821291919}

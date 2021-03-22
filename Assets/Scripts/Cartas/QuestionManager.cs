@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using Turno;
 using UnityEngine;
-using Random = Unity.Mathematics.Random;
+using Random = System.Random;
 
 namespace Cartas
 {
@@ -17,6 +17,8 @@ namespace Cartas
 		private List<Question> _unansweredQuestions;
 		private Question _currentQuestion;
 		private int _quantityToMove;
+		private Random rnd = new Random();
+
 
 		private void Start()
 		{
@@ -25,7 +27,7 @@ namespace Cartas
 
 		void SetCurrentQuestion()
 		{
-			int randomQuestionIndex = new Random().NextInt(0, _unansweredQuestions.Count);
+			int randomQuestionIndex = rnd.Next(_unansweredQuestions.Count - 1);
 			_currentQuestion = _unansweredQuestions[randomQuestionIndex];
 
 			factText.text = _currentQuestion.Fact;

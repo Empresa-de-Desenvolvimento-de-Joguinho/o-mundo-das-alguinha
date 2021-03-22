@@ -55,6 +55,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 33e5c74cdaae72e499f79dc31957b8f4, type: 3}
   - {fileID: 21300000, guid: d5673cf5cbfc1804999fe8dbee7bacd7, type: 3}
   - {fileID: 21300000, guid: a845d213cd9d32d4b8ee4aa6569cec41, type: 3}
+  fixedPosition: 0
+  diceFixedPosition: 0
   diceSide: 0
 --- !u!1 &3254028515156184736
 GameObject:
@@ -410,7 +412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3859730344737596308
 RectTransform:
   m_ObjectHideFlags: 0

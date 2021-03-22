@@ -11,7 +11,7 @@ public class EndTurn : TurnComponent
 
     private IEnumerator WaitForNextTurn()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(.5f);
         FinishComponent();
     }
 

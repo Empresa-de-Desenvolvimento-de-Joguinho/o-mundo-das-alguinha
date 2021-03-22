@@ -15,3 +15,4 @@ MonoBehaviour:
   sprite: {fileID: 5751699981273881065, guid: 76ff72d9e817a4f4596ba2a88283ab7f, type: 3}
   scientificName: "Cyanobact\xE9ria"
   color: {r: 1, g: 1, b: 1, a: 0}
+  type: 1

@@ -15,3 +15,4 @@ MonoBehaviour:
   sprite: {fileID: -5882913991197274928, guid: fe7a500071cd1d94295a671e976930ba, type: 3}
   scientificName: Dinoflagelada
   color: {r: 1, g: 1, b: 1, a: 0}
+  type: 3
