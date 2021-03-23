@@ -51,8 +51,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05017392712b4b438e6f15e89a0b687c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  confirmedPlayers: {fileID: 6827041280286665014}
+  canvas: {fileID: 0}
   singleCharacterSelector: []
+  confirmButton: {fileID: 0}
 --- !u!1 &6827041281618544887
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,14 +114,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -6512647179760770247, guid: 547db6a30e32de046849a526c6d16b0c,
+    type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -247,7 +249,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a2b6e8ee4c50aee4d8b4a9974ad8ef69, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -355,7 +357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -386,11 +388,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Sele\xE7\xE3oIndividual1"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1953807911341046537, guid: 4a12830b90998cf4ab32176788fa1b1b,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2006706924329088437, guid: 4a12830b90998cf4ab32176788fa1b1b,
         type: 3}
@@ -546,21 +543,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Sele\xE7\xE3oIndividual2"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1953807911341046537, guid: 4a12830b90998cf4ab32176788fa1b1b,
-        type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1953807911341046537, guid: 4a12830b90998cf4ab32176788fa1b1b,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1953807911341046537, guid: 4a12830b90998cf4ab32176788fa1b1b,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2006706924329088437, guid: 4a12830b90998cf4ab32176788fa1b1b,
         type: 3}

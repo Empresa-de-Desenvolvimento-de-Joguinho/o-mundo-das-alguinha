@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e984793aebad40e1b0b3c045a254c139, type: 3}
+  m_Name: "Limn\xE9tica_15"
+  m_EditorClassIdentifier: 
+  Fact: "A carapa\xE7a de s\xEDlica das diatom\xE1ceas deixam elas muito pesadas
+    para se manterem na regi\xE3o limn\xE9tica"
+  IsTrue: 1

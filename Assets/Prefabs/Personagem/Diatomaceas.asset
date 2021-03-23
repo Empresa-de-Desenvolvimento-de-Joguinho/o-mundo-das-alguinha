@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: -1229724433242203024, guid: c2e7d5d8eb48da64bb4a6c7a9c42c854, type: 3}
   scientificName: Diatomaceas
-  color: {r: 1, g: 1, b: 1, a: 0}
+  color: {r: 0.97647065, g: 0.8000001, b: 0, a: 0}
+  type: 2

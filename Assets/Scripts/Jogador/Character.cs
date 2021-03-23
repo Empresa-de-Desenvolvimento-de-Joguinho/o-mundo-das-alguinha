@@ -10,6 +10,8 @@ namespace Jogador
         [SerializeField] private string scientificName;
 
         [SerializeField] private Color color;
+
+        [SerializeField] private CharacterType type;
     
         public Sprite GetSprite()
         {
@@ -26,6 +28,20 @@ namespace Jogador
         {
             return color;
         }
+
+        public CharacterType GetType()
+        {
+            return type;
+        }
         
+    }
+
+    public enum CharacterType
+    {
+        CHLOROPHYCEAE,
+        CYANOBACTERIA,
+        DIATOMACEAS,
+        DINOFLAGELADA,
+        EUGLENA
     }
 }

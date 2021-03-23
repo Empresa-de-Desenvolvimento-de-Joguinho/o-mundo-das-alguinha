@@ -1,22 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Turno;
+﻿using Turno;
 using UnityEngine;
+using System.Linq;
 
 public class GameOver : TurnComponent
 {
-    public void SetPlayerData(PlayerMovement[] playerMovement)
+    [SerializeField] PlayerEndGameInfo[] _playerEndGameInfos;
+    [SerializeField] private GameObject canvas;
+    
+    public void SetPlayerData(PlayerMovement[] playerMovements)
     {
-
+        var orderedPlayers = playerMovements.OrderByDescending(x => x.ActualCellNumber).ToArray();
+        for(int x=0; x< playerMovements.Length; x++)
+        {
+            _playerEndGameInfos[x].SetPlayerData(orderedPlayers[x]);
+        }
     }
 
     public override void ShowElements()
     {
-        throw new System.NotImplementedException();
+        canvas.SetActive(true);
     }
 
     protected override void HideComponent()
     {
-        throw new System.NotImplementedException();
+        canvas.SetActive(false);
     }
 }

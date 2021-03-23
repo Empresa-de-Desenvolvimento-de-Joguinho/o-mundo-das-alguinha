@@ -18,6 +18,6 @@ public class EventCard : ScriptableObject
 			return false;
 		}
 
-		return characters.Any(x => character == x);
+		return characters.Any(x => character.GetType() == x.GetType());
 	}
 }

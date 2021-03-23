@@ -78,8 +78,8 @@ namespace Jogador
 		{
 			_active = !_active;
 			playerSelectionScreen.SetActive(_active);
-			addText.SetActive(_active);
-			removeText.SetActive(!_active);
+			addText.SetActive(!_active);
+			removeText.SetActive(_active);
 			ShowCharacter();
 		}
 
